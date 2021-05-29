@@ -5,4 +5,7 @@ node{
   stage('SAST'){
     println "sast"
   }
+   stage('pruebas funcionales'){
+    println "QA"
+  }
 }
