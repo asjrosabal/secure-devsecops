@@ -14,7 +14,7 @@ node{
     '''
     writeFile file: 'build.gradle', text: readContent+"\r\n${task}"
    
-    sh 'gradle libraries'
+    sh './gradlew libraries'
     
   }
    stage('pruebas funcionales'){
