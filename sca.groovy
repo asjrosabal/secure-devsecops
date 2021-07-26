@@ -4,7 +4,7 @@ node{
   }
   stage('SCA'){
    
-    def readContent = readFile 'build.gradle'
+    /*def readContent = readFile 'build.gradle'
     
     def task = '''
     task libraries(type: Copy) {
@@ -12,7 +12,7 @@ node{
       into "lib"
     }
     '''
-    writeFile file: 'build.gradle', text: readContent+"\r\n${task}"
+    writeFile file: 'build.gradle', text: readContent+"\r\n${task}" */
    
     sh './gradlew libraries'
     
